@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://fahru.my.id/sitemap.xml
