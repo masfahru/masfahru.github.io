@@ -6,9 +6,10 @@
   "license": "MIT",
   "devDependencies": {
     "gh-pages": "^4.0.0",
+    "rimraf": "^3.0.2",
     "shx": "^0.3.4"
   },
   "scripts": {
-    "deploy": "hugo --minify && shx cp public/index.xml public/atom.xml && gh-pages -d public"
+    "deploy": "rimraf public && hugo --minify && shx cp public/index.xml public/atom.xml && gh-pages -d public"
   }
 }
