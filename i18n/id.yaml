@@ -1,0 +1,61 @@
+article:
+  anchor_label: "Anchor"
+  date: "{{ .Date }}"
+  date_updated: "Diperbarui: {{ .Date }}"
+  draft: "Draft"
+  edit_title: "Edit content"
+  reading_time:
+    one: "{{ .Count }} menit"
+    other: "{{ .Count }} menit"
+  reading_time_title: "Durasi membaca"
+  table_of_contents: "Daftar Isi"
+  word_count:
+    one: "{{ .Count }} kata"
+    other: "{{ .Count }} kata"
+  views:
+    one: "{{ .Count }} pembaca"
+    other: "{{ .Count }} pembaca"
+  likes:
+    one: "{{ .Count }} like"
+    other: "{{ .Count }} likes"
+
+author:
+  byline_title: "Penulis"
+
+code:
+  copy: "Salin"
+  copied: "Tersalin"
+
+error:
+  404_title: "Laman Tidak Ditemukan :confused:"
+  404_error: "Error 404"
+  404_description: "Sepertinya laman yang kamu cari tidak ada."
+
+footer:
+  dark_appearance: "Ganti tema gelap"
+  light_appearance: "Ganti tema cerah"
+  powered_by: "Powered by {{ .Hugo }} &amp; {{ .Theme }}"
+
+list:
+  externalurl_title: "Tautan ke website lain"
+  no_articles: "Belum ada artikel yang diposting di sini."
+
+nav:
+  scroll_to_top_title: "Scroll ke atas"
+  skip_to_main: "Lewati"
+
+search:
+  open_button_title: "Cari (/)"
+  close_button_title: "Tutup (Esc)"
+  input_placeholder: "Ketik kata kunci"
+
+sharing:
+  email: "Bagikan via email"
+  facebook: "Bagikan di Facebook"
+  linkedin: "Bagikan di LinkedIn"
+  pinterest: "Bagikan di Pinterest"
+  reddit: "Bagikan di Reddit"
+  twitter: "Bagikan di Twitter"
+
+shortcode:
+  recent_articles: "Terbaru"

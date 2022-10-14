@@ -1,0 +1,14 @@
+{
+  "name": "masfahru.github.io",
+  "version": "1.0.0",
+  "repository": "https://github.com/masfahru/masfahru.github.io.git",
+  "author": "Imam Fahrur Rofi <imam@fahru.my.id>",
+  "license": "MIT",
+  "devDependencies": {
+    "gh-pages": "^4.0.0",
+    "shx": "^0.3.4"
+  },
+  "scripts": {
+    "deploy": "hugo --minify && shx cp public/index.xml public/atom.xml && gh-pages -d public"
+  }
+}
