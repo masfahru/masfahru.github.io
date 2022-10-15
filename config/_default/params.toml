@@ -39,12 +39,12 @@ enableCodeCopy = true
   showDraftLabel = true
   showEdit = false
   # editURL = "https://github.com/username/repo/"
-  editAppendPath = true
+  editAppendPath = false
   showHeadingAnchors = true
   showPagination = true
   invertPagination = false
   showReadingTime = true
-  showTableOfContents = true
+  showTableOfContents = false
   showTaxonomies = true 
   showAuthorsBadges = true 
   showWordCount = true
@@ -53,7 +53,7 @@ enableCodeCopy = true
 
 [list]
   showBreadcrumbs = false
-  showSummary = false
+  showSummary = true
   showTableOfContents = false
   showCards = true
   groupByYear = false
