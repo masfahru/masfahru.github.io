@@ -15,16 +15,6 @@
   pageRef = "posts"
   weight = 10
 
-[[main]]
-  name = "Kategori"
-  pageRef = "categories"
-  weight = 20
-
-[[main]]
-  name = "Label"
-  pageRef = "tags"
-  weight = 30
-
 
 # -- Footer Menu --
 # The footer menu is displayed at the bottom of the page, just before
