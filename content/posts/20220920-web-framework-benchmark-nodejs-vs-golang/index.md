@@ -9,9 +9,9 @@ showSummary: true
 categories: ["Go", "Node"]
 tags: ["Benchmark", "Web-framework"]
 ---
-
+<img class="thumbnailshadow" src="featured.webp"/>
 {{< alert >}}
-Artikel ini telah dipublikasi di Linkedin pada tautan <a target="_blank" href="https://www.linkedin.com/posts/imamfahrurrofi_web-framework-benchmark-nodejs-vs-go-activity-6976213913256300544-aQct">berikut ini</a>.
+Artikel ini berasal dari publikasi di Linkedin pada tautan <a target="_blank" href="https://www.linkedin.com/posts/imamfahrurrofi_web-framework-benchmark-nodejs-vs-go-activity-6976213913256300544-aQct">berikut ini</a>.
 {{</ alert >}}
 
 Karena penasaran dengan performa beberapa web framework dari Nodejs dan Golang, ditambah adanya keinginan untuk belajar pemrograman backend Golang, maka saya buatlah benchmarknya.
@@ -23,7 +23,9 @@ Web framework yang dites:
 - Bunjs: Honojs
 - Deno: Honojs
 
-Metode tes:
+## Metode Benchmark
+
+Terdapat dua metode untuk test, yakni:
 
 - TEST-GET: 10000 request GET dibagi 100 concurrent users, response berupa JSON berisi status: "OK".
 - TEST-POST: 10000 request POST dibagi 100 concurrent users, request body berupa JSON dengan ukuran file 52KB, response berupa JSON berisi data yang dikirim pada request body.
@@ -35,19 +37,20 @@ Tools:
 
 - Docker desktop
 - Cassowary http load testing tool
-- Laptop keluaran tahun 2015 core i5 - vcpu 4 - ram 16GB, pas buat simulasi server low budget. 😅
+- Laptop keluaran tahun 2015 core i5 - vcpu 4 - ram 16GB
 
-Keterangan slide:
+Urutan tes :
 
-1. Pembagian port
-2. Node Express
-3. Node Fastify
-4. Node Hyper-Express
-5. Go Echo
-6. Go Fiber
-7. Go Native (net/http)
-8. Deno Honojs
-9. Bun Honojs
+1. Node Express
+2. Node Fastify
+3. Node Hyper-Express
+4. Go Echo
+5. Go Fiber
+6. Go Native (net/http)
+7. Deno Honojs
+8. Bun Honojs
+
+## Hasil
 
 TEST-GET:
 
@@ -71,6 +74,6 @@ TEST-POST:
 - Deno-Hono: 285 req/s (Rank 5)
 - Bun-Hono: 317 req/s (Rank 2)
 
-Berdasarkan hasil di atas, dapat diketahui bahwa rata-rata performa web framework golang lebih baik daripada web framework Nodejs yang terkenal seperti Expressjs. Namun dengan perkembangan web framework baru di Nodejs seperti Node-Hyper-Express memberi kemungkinan bahwa Javascript masih memiliki kemampuan untuk bersaing dengan Golang.
+Berdasarkan hasil di atas, dapat diketahui bahwa rata-rata performa web framework golang lebih baik dan lebih stabil daripada web framework Nodejs. Namun dengan adanya hasil yang cukup baik pada Node Hyper-Express dan Bunjs, hal ini memberi tahu bahwa Javascript masih memiliki kemampuan untuk bersaing dengan Golang.
 
-Jika rekan-rekan ingin mencoba untuk mem-benchmark sendiri, silahkan clone dan jalankan repository ini: <https://github.com/masfahru/benchmark-web-framework>
+Jika rekan-rekan ingin mencoba untuk mem-benchmark sendiri, silahkan clone dan jalankan repository berikut: <https://github.com/masfahru/benchmark-web-framework>
