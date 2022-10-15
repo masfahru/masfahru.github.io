@@ -1,5 +1,5 @@
 ---
-title: "Bechmark Web Framework: Go vs Javascript"
+title: "Benchmark Web Framework: Go vs Javascript"
 date: 2022-09-20
 externalUrl: "https://www.linkedin.com/posts/imamfahrurrofi_web-framework-benchmark-nodejs-vs-go-activity-6976213913256300544-aQct"
 summary: "Benchmark beberapa web framework Golang, Node, Deno, dan Bun dengan menggunakan container untuk mengetahui kecepatan pemrosesan payload pada HTTP Method POST di setiap framework."
